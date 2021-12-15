@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tableView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/NumpadButton"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/NumpadButton"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/NumpadButton"
+            android:text="@string/nine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/four"
+            style="@style/NumpadButton"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/NumpadButton"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/NumpadButton"
+            android:text="@string/six" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/one"
+            style="@style/NumpadButton"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/NumpadButton"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/NumpadButton"
+            android:text="@string/three" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/next"
+            style="@style/NumpadButton"
+            app:icon="@drawable/ic_key_next" />
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/NumpadButton"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/backspace"
+            style="@style/NumpadButton"
+            app:icon="@drawable/ic_key_backspace" />
+    </LinearLayout>
+
+</LinearLayout>

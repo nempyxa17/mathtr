@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumpadButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@color/soft_white</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="backgroundTint">@color/accent</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="iconTint">@color/soft_white</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+    </style>
+
+    <style name="ToggleButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">@dimen/text_size_regular</item>
+        <item name="android:textColor">@color/toggle_button_text_color_selector</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="strokeColor">@color/toggle_button_stroke_color_selector</item>
+        <item name="backgroundTint">@color/toggle_button_color_selector</item>
+        <item name="strokeWidth">@dimen/toggle_button_stroke_size</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">@dimen/button_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/button_vertical_padding</item>
+        <item name="android:textColor">@color/soft_white</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="backgroundTint">@color/accent</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="iconTint">@color/soft_white</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconSize">@dimen/button_icon_size</item>
+    </style>
+
+    <style name="TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:textColor">@color/soft_white</item>
+        <item name="android:textColorHint">@color/soft_white_hint</item>
+        <item name="backgroundTint">@color/soft_white</item>
+    </style>
+
+    <style name="TextView.Bigger">
+        <item name="android:textSize">@dimen/text_size_bigger</item>
+    </style>
+
+    <style name="TextView.Big">
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+
+    <style name="TextView.Regular">
+        <item name="android:textSize">@dimen/text_size_regular</item>
+    </style>
+
+    <style name="TextView.Bigger.Question">
+        <item name="android:maxLength">@integer/textview_question_size</item>
+    </style>
+
+    <style name="TextView.Bigger.Answer">
+        <item name="android:maxLength">@integer/textview_answer_size</item>
+    </style>
+
+    <style name="TextView.Regular.Settings">
+        <item name="android:maxLength">@integer/textview_settings_size</item>
+    </style>
+
+    <style name="NavigationDrawer">
+        <item name="android:background">@color/soft_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/menu_margin_top</item>
+        <item name="android:layout_width">@dimen/menu_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="itemIconSize">@dimen/menu_icon_size</item>
+        <item name="itemShapeFillColor">@color/menu_item_background</item>
+        <item name="itemIconTint">@color/menu_item_content</item>
+    </style>
+</resources>

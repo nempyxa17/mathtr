@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">mathtr</string>
+
+    <string name="menu_mathtr">mathtr</string>
+    <string name="menu_settings">settings</string>
+    <string name="menu_about">about</string>
+
+    <string name="from">from</string>
+    <string name="to">to</string>
+
+    <string name="button_apply">Apply</string>
+    <string name="button_discard">Discard</string>
+
+    <string name="answer_hint">Answer</string>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+
+    <string name="addition">+</string>
+    <string name="subtraction">-</string>
+    <string name="multiplication">*</string>
+    <string name="division">/</string>
+
+    <string name="min">min</string>
+    <string name="max">max</string>
+
+    <string name="interval_start">[</string>
+    <string name="interval_end">]</string>
+    <string name="comma">,</string>
+</resources>

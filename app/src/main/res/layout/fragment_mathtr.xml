@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.nempyxa.mathtr.ui.MathtrFragment" />
+
+        <variable
+            name="answerText"
+            type="String" />
+
+        <import type="android.view.View" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/major_medium"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/activity_horizontal_padding"
+        android:paddingTop="@dimen/activity_vertical_padding"
+        android:paddingEnd="@dimen/activity_horizontal_padding"
+        android:paddingBottom="@dimen/activity_vertical_padding"
+        tools:context=".ui.MathtrFragment">
+
+        <TextView
+            android:id="@+id/questionView"
+            style="@style/TextView.Bigger.Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_vertical_big"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/question_text" />
+
+        <TextView
+            android:id="@+id/answerView"
+            style="@style/TextView.Bigger.Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/answer_hint"
+            android:onTextChanged="@{listener::onAnswerTextChanged}"
+            android:text="@{answerText}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/questionView" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="answerView,guideline" />
+
+        <com.nempyxa.mathtr.ui.NumericKeypadView
+            android:id="@+id/numeric_keypad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/view_margin_vertical_bigger"
+            android:layout_marginBottom="@dimen/view_margin_vertical_big"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            app:contentSize="@dimen/text_size_big"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier"
+            app:spacingHorizontal="@dimen/numpad_big_spacing_horizontal"
+            app:spacingVertical="@dimen/numpad_big_spacing_vertical" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

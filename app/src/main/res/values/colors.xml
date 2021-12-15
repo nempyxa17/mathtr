@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="soft_white">#FFD9D4C3</color>
+    <color name="soft_white_hint">#55D9D4C3</color>
+    <color name="major_medium">#FF537892</color>
+    <color name="major_dark">#FF4D6484</color>
+    <color name="accent">#FFD48460</color>
+    <color name="green">#FF69B076</color>
+    <color name="red">#FFC65F58</color>
+</resources>

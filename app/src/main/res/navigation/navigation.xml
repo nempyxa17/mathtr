@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@+id/nav_mathtr">
+
+    <fragment
+        android:id="@+id/nav_mathtr"
+        android:name="com.nempyxa.mathtr.ui.MathtrFragment"
+        android:label="@string/menu_mathtr"
+        tools:layout="@layout/fragment_mathtr" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.nempyxa.mathtr.ui.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings">
+
+        <action
+            android:id="@+id/action_Settings_to_Mathtr"
+            app:destination="@id/nav_mathtr"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.nempyxa.mathtr.ui.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

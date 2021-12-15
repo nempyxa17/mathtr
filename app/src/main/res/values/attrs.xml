@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumPadView">
+        <attr name="showNext" format="boolean" />
+        <attr name="contentSize" format="dimension" />
+        <attr name="spacingHorizontal" format="dimension" />
+        <attr name="spacingVertical" format="dimension" />
+    </declare-styleable>
+</resources>
