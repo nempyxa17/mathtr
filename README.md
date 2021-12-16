@@ -1,2 +1,2 @@
 # mathtr
-Simple mantal arithmetics Android app
+Simple mental arithmetic Android app

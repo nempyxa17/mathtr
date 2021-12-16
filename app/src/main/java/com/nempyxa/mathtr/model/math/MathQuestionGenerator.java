@@ -206,6 +206,8 @@ public class MathQuestionGenerator {
         int rightMin = parameters.getRightArgMin();
         int rightMax = Math.min(parameters.getLeftArgMax(), parameters.getRightArgMax());
 
+        if (rightMin == 0) return false;
+
         for (int left = leftMin; left <= leftMax; left++) {
             for (int right = rightMin; right <= rightMax; right++) {
                 if (left % right == 0) {

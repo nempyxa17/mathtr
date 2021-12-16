@@ -27,7 +27,7 @@ public class Storage {
     private static final int DEFAULT_LEFT_MAX = 5;
     private static final int DEFAULT_RIGHT_MIN = 10;
     private static final int DEFAULT_RIGHT_MAX = 15;
-    private static final List<String> DEFAULT_OPERATIONS = Arrays.asList("ADDITION", "SUBTRACTION", "MULTIPLICATION", "DIVISION");
+    private static final List<String> DEFAULT_OPERATIONS = Arrays.asList("ADDITION", "MULTIPLICATION");
 
     public static void storeParameters(MathQuestionGenerationParameters parameters, Context context) {
         SharedPreferences prefs = context.getSharedPreferences(NAME, Context.MODE_PRIVATE);
